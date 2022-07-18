@@ -174,6 +174,7 @@ Caveats:
   - You should run some posterior predictive checks after you get an approximate posterior.
   - $q(\theta^k)$ improves monotonically, but no guarantee your local mode is the global mode.
   - frequentists use something similar, so it can be confusing with terminology overlap. 
+  - adding to that confusion, some presentations blur the distinction between parameters and latent variables
 
 
 ## Variational Bayes
@@ -249,7 +250,7 @@ Summarizing:
 Why did we assume that $g$ factors, though?
 
 
-## Variational Bayes
+## Coordinate Ascent Variational Inference
 
 Looking at $\phi_j$ only 
 
@@ -265,7 +266,7 @@ $$
 
 to minimize set $\tilde{p}(\theta_j) = g_j(\theta_j \mid \phi_j)$. 
 
-## Variational Bayes
+## Coordinate Ascent Variational Inference
 
 Longer version:
 
@@ -283,10 +284,10 @@ Longer version:
 
 then make everything negative again...
 
-## Variational Bayes
+## Coordinate Ascent Variational Inference
 
 
-\begin{block}{VI algorithm}
+\begin{block}{ Coordinate Ascent Variational Inference algorithm}
 Do the following many times: \\
 for $j=1,\ldots,J$ set $\phi_j$ so that $g_j(\theta_j \mid \phi_j) := \tilde{p}(\theta_j)$
 \end{block}
