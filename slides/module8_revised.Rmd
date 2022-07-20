@@ -187,10 +187,10 @@ Similarities:
 
 ## Variational Bayes
 
-Say $\theta = (\theta^1, \ldots, \theta^j)$. A standard simplifying assumption is 
+Say $\theta = (\theta^1, \ldots, \theta^J)$. A standard simplifying assumption is 
 
 $$
-g(\theta) = g_1(\theta^1) \times \cdots \times g_j(\theta^j)
+g(\theta) = g_1(\theta^1) \times \cdots \times g_J(\theta^J)
 $$
 To be more precise 
 \begin{align*}
