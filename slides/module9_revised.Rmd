@@ -129,7 +129,7 @@ Our example in a Jupyter notebook:
 ```{python, eval = FALSE, echo = TRUE}
 # refine g over and over again
 for i in range(big_num):
-    g = update_probs(g, data, prior)
+    g = update_x(g, data, prior)
     g = update_pi(g, data, prior)
     g = update_mu_lambda_zero(g, data, prior)
     g = update_mu_lambda_one(g, data, prior)
