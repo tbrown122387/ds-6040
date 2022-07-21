@@ -121,7 +121,7 @@ This update always decreases KL divergence because it always increases the ELBO.
 
 Our example in a Jupyter notebook:
 
-- parameters: $p_1, \ldots, p_n, \pi, \mu_0, \Lambda_0, \mu_1, \Lambda_1$
+- parameters: $\pi, \mu_0, \Lambda_0, \mu_1, \Lambda_1$
 - hidden variables: $x_1, \ldots, x_n$
 - $z$ is the collection of all of this
 
